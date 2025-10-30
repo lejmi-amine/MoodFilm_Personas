@@ -430,8 +430,8 @@
       }
 
       .persona-avatar {
-        width: 100%;
-        height: 100%;
+        width: 130%;
+        height: 130%;
         object-fit: cover;
         object-position: center center;
         transition: transform 0.3s ease;
@@ -541,8 +541,8 @@
       }
 
       .scenario-avatar-img {
-        width: 100%;
-        height: 100%;
+        width: 130%;
+        height: 125%;
         object-fit: cover;
         object-position: center center;
       }
@@ -670,6 +670,7 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
         margin-top: 3rem;
+        align-items: flex-start;
       }
 
       .definition-card {
@@ -684,7 +685,8 @@
         font-size: 1.5rem;
         margin-bottom: 1rem;
         color: #2d3748;
-        text-align: center;
+    
+        text-align: left;
       }
 
       .definition-list {
@@ -1554,30 +1556,34 @@
           </div>
         </div>
 
-        <div class="definitions">
-          <div class="definition-card">
-            <h3 class="definition-title">✅ Definition of Done (DoD)</h3>
-            <ul class="definition-list">
-              <li>All user stories are implemented and reviewed</li>
-              <li>Code tested (unit + integration)</li>
-              <li>Recommendations match mood categories accurately</li>
-              <li>UI tested for usability</li>
-              <li>Documentation updated</li>
-              <li>Product owner (teacher) approves user stories</li>
-            </ul>
-          </div>
+<div class="definitions">
+  <div class="definition-card">
+    <h3 class="definition-title">✅ Definition of Done (DoD)</h3>
+    <ul class="definition-list">
+      <li>All planned features (mood-based recommendation, premium themes, favorites, parental filter) are fully implemented and tested</li>
+      <li>Frontend and backend are successfully integrated and stable</li>
+      <li>All critical bugs are resolved and non-critical issues documented</li>
+      <li>Performance goals are met (e.g., recommendation loads &lt; 3 seconds)</li>
+      <li>Security and privacy standards (API key handling, user data) are ensured</li>
+      <li>UI/UX has been reviewed and validated through user testing</li>
+      <li>Documentation for setup, usage, and maintenance is complete</li>
+      <li>The product has been deployed to a public or demo environment</li>
+      <li>Final acceptance testing with stakeholders (teacher / users) is completed</li>
+    </ul>
+  </div>
 
-          <div class="definition-card">
-            <h3 class="definition-title">🟢 Definition of Ready (DoR)</h3>
-            <ul class="definition-list">
-              <li>All personas and scenarios validated by team</li>
-              <li>Effort in story points estimated</li>
-              <li>Acceptance criteria defined</li>
-              <li>API sources and endpoints identified</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+  <div class="definition-card">
+    <h3 class="definition-title">🟢 Definition of Ready (DoR)</h3>
+    <ul class="definition-list">
+      <li>Personas and scenarios for the story have been validated by the team</li>
+      <li>The story’s acceptance criteria are clearly defined and testable</li>
+      <li>Effort estimation (story points or time) has been completed</li>
+      <li>API sources and endpoints are identified and accessible</li>
+      <li>Dependencies or blockers have been clarified</li>
+    </ul>
+  </div>
+</div>
+
     </section>
 
     <!-- Navigation -->
